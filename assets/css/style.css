@@ -107,10 +107,34 @@ li {
   Header styling starts here
 =================================*/
 
+header {
+  margin: 26px 3.2%;
+  padding: 25px;
+  background-color: #000;
+}
 
+header .wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 
+header nav {float: right;}
+nav a {
+  color: #fff;
+  font-size: 18px;
+  font-family: serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
+nav li { padding: 2px 13px;}
+nav li:nth-child(1) { border-right: 1px solid #fff;}
 
+nav a:hover {
+  background-color: #fff;
+  color: #000;
+}
 
 /*=================================
   Header styling ends here
