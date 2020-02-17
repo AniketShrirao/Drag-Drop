@@ -196,13 +196,20 @@ nav a:hover {
   border: 1px solid;
   border-radius: 10px;
   background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .drag li a {
   color: #fff;
   letter-spacing: 2px;
   font: 600 18px serif;
   text-transform: uppercase;
 }
+
+.drag li:hover { background-color: #fff;}
+.drag li:hover a { color: #000;}
 
 /*=================================
   main styling ends here
@@ -212,11 +219,18 @@ nav a:hover {
   footer styling starts here
 =================================*/ 
 
+footer {
+  margin:0 3.2%;
+  margin-bottom:26px;
+  padding: 25px;
+  background-color: #000;
+}
 
-
-
-
-
+footer .wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 
  /*=================================
   footer styling ends here
