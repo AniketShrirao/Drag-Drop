@@ -3,6 +3,8 @@ var priorities = document.querySelectorAll('.priority');
 var dragEle = document.querySelectorAll('.drag li');
 var start = document.querySelector('#start');
 var restart = document.querySelector('#restart');
+var dropsection = document.querySelector('.drop');
+var dragsection = document.querySelector('.drag ul');
 var draggedItem = null;
 var btnstart = start.addEventListener('click',started);
 
@@ -57,13 +59,12 @@ for (var k = 0; k < priorities.length; k++) {
   });
   priority.addEventListener('drop',function() {
     debugger; 
-    var cloned = draggedItem.cloneNode(true);
     this.appendChild(draggedItem);
-    draggedItem.classList.toggle('visible');
-    // draggedItem.style.visibility = "visible";
+    if(dragsection.innerText == "")
+    dropsection.classList.add('margin');
+    // dropsection.style.marginBottom = "119px";    
   });
 }
-
 var btnrestart = restart.addEventListener('click',function(){
   debugger;
   window.location.reload();
