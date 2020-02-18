@@ -49,10 +49,10 @@ for (var k = 0; k < priorities.length; k++) {
   var priority = priorities[k];
   priority.addEventListener('dragover',function(e) {
     e.preventDefault();
+    this.classList.toggle('bgcolor');
   });
   priority.addEventListener('dragenter',function(e) {
     e.preventDefault();
-    this.classList.toggle('bgcolor');
   });
   priority.addEventListener('drop',function() {
     debugger; 
