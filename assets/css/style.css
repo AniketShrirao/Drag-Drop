@@ -212,15 +212,18 @@ nav a:hover {
   align-items: center;
 }
 
-.drag li a {
+.drag li a,
+.priority li a {
   color: #fff;
   letter-spacing: 2px;
   font: 600 18px serif;
   text-transform: uppercase;
 }
 
-.drag li:hover { background-color: #fff;}
-.drag li:hover a { color: #000;}
+.drag li:hover,
+.priority li:hover { background-color: #fff;}
+.drag li:hover a,
+.priority li:hover a { color: #000;}
 
 .hidden {visibility: hidden;}
 .visible {visibility: visible;}
