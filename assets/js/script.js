@@ -32,7 +32,6 @@ if(start.innerHTML == "Start") {
       draggedItem = this;
       setTimeout(function() {
         draggedItem.classList.toggle('hidden');
-        // draggedItem.style.visibility = "hidden";
       },0);
     }
     dragEle[index].addEventListener('dragend',dragend); 
@@ -41,7 +40,6 @@ if(start.innerHTML == "Start") {
       draggedItem = this;
       setTimeout(function() {
         draggedItem.classList.toggle('visible');
-        // draggedItem.style.visibility = "visible";
       },0);
     }
   }
@@ -55,14 +53,12 @@ for (var k = 0; k < priorities.length; k++) {
   priority.addEventListener('dragenter',function(e) {
     e.preventDefault();
     this.classList.toggle('bgcolor');
-    // this.style.backgroundColor = 'rgba(0,0,0,0.2)';
   });
   priority.addEventListener('drop',function() {
     debugger; 
     this.appendChild(draggedItem);
     if(dragsection.innerText == "")
     dropsection.classList.add('margin');
-    // dropsection.style.marginBottom = "119px";    
   });
 }
 var btnrestart = restart.addEventListener('click',function(){
